@@ -1,0 +1,20 @@
+{
+  "description": "Adds conversion indicator (likes/views) to dribbble shots",
+  "manifest_version": 2,
+  "name": "Dribbble Conversify",
+  "version": "0.1.1",
+  "homepage_url": "https://unnamed.co/conversify",
+  "icons": {
+    "48": "icons/logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.dribbble.com/*"
+      ],
+      "js": [
+        "conversify.js"
+      ]
+    }
+  ]
+}
